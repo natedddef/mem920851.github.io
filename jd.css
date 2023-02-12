@@ -1,0 +1,101 @@
+#cet:hover{
+    transition: 1s all;
+    transform: scale(1.1);
+}
+#keste{
+    text-align: center; 
+     background-color: rgb(195, 240, 33);
+     margin-top: 8.5cm;
+     
+ }
+ #but{
+    float: right;
+ }
+ #b{
+    float: right;
+    background-color: beige;
+ }
+#button{
+ margin-top:  8cm;;
+}
+html{
+     background-color: beige;
+ }
+ #hello{
+    background-color:coral;
+     }
+ h1{
+     background-color: rgb(195, 240, 33);;
+ }
+
+#ani{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: red;
+}
+#div{
+     margin-left: 30cm;
+    background-color: rgba(211, 247, 82, 0.829);
+    width: 5.3cm;
+       border: 1px solid black;
+      height: 6cm;
+    display: none;
+    position: absolute;
+}
+#btr{
+    margin-bottom: 2cm;
+    background-color: antiquewhite;
+}
+#h4{
+    width: 5cm;
+}
+#boy:hover{
+    background-color: rgba(210, 231, 23, 0.637);
+}
+#regd{
+    margin-left: 12cm;
+    margin-top:3cm;
+    width: 10cm;
+    height: 12cm;
+    border: 1px solid black;
+    background-color: rgb(252, 208, 10);
+}
+#inpt{
+    margin-left: 3cm;
+    margin-top: -5cm;
+
+}
+#kol{
+margin-left: 4.3cm;
+margin-top: 0.5 cm;
+}
+#ko{
+    margin-left: 4.2cm;
+    margin-top: 0.5cm; 
+}
+#inp{
+    margin-left: 3cm;
+    margin-top: -8cm;
+}
+#nr{
+    margin-left: 4.3cm;
+    margin-top: 3cm;
+}
+#entr{
+    width: 3cm;
+    margin-top: 10px;
+    margin-left: 3.4cm;
+}
+#btrc{
+    margin-top:5px;
+    padding:15px;
+}
+#btrc:hover{
+   
+    background-color: rgb(184, 243, 22);
+}
+#but:hover{
+    transition: 1s;
+transform:rotate(360deg);
+}

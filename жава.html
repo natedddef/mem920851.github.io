@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="jquery-3.6.3.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <title>java</title>
+      <link rel="stylesheet" type="text/css"  href="jd.css">
+    </head>
+    <body>
+      <div id="draggable">
+        <p>текст</p>
+      </div>
+   <img  id="but" src="rfe.png">
+   <center > <h1  id="hello"></h1></center>
+   <div id="div">
+   <button id="boy" onclick="reg()"><h4 id="h4">тіркелу</h4></button>
+   <button id="boy" onclick="reg()"><h4 id="h4">кіру</h4></button>
+   <button id="boy" onclick="shar()"><h4 id="h4">бөлісу</h4></button>
+    <h4 id="btrc">артқа</h4>
+   </div>  
+   <h4 id="text"></h4>
+   
+      <h1 id="tarix"></h1>
+       <img id="cet" class="img" src="https://polaris.company/upload/iblock/a7c/PIR-2481K_K02.jpg">   
+       <h4 id="text2"></h4>
+       <h1 id="keste">электр энериясын қолдану көрсеткіші</h1>
+       <table id="table" border="1px">
+       <tr>
+        <td>модель</td>
+        <td>қуаты</td>
+       </tr>
+       <tr>
+        <td>Braun Braun 745-AutoOff </td>
+        <td>2400 Вт</td>
+       </tr>
+       <tr>
+        <td>Vitek VT-1201 2010</td>
+        <td>2200 Вт</td>
+       </tr>
+       <tr>
+        <td>Tefal FV5770E0 </td>
+        <td>2200 Вт</td>
+       </tr>
+       <tr>
+        <td>Orvica ORM-3508</td>
+        <td>2900 Вт</td>
+       </tr>
+       <tr>
+        <td>Vitek VT-1215 </td>
+        <td>2200 Вт</td>
+       </tr>
+      
+    </table>
+    <button onclick="sortTable()">сортировка</button>
+       <script>
+          const f=  document.getElementById("hello");
+          const text=document.getElementById("text");     
+          const text2=document.getElementById("text2");
+          tarix.textContent="Тарихы";
+          text.textContent="Үтік — киім-кешектердің қыртыстарын тегістейтін, яғни үтіктейтін тұрмыстық техника. Үтіктер киімдерді тегістеп алғашқы әдемі қыртыссыз қалпына келтіруде өздерінің салмағын және температурасын пайдаланумен қол жеткізеді. ";
+          f.textContent="үтік";
+          text.style.fontFamily="Garamond";
+          text2.textContent="I ғасырда жазық жылтыр металдарды сумен қыздырып үтіктеу Қытайда қолданыла бастады.Үтіктеудің принциптері Көне Юнанстанда IV ғасырда пайда бола бастады.Кәдімгі үтік.Көмірбен қыздырылатын XIX ғасыр аяғы мен XX ғасыр басы үтігіXI ғасырда М. Қашқари «Диуанда» былай деп жазған: YTYK (اُتُكْ): Үтік. Күрек пішінді бір темір құрал, киімнің қыртыстарын жазу үшін оны қыздырып киімді бастыра сылайды.Алғашқы электрлі үтікті 1882 жылы Генри Силей ойлап тапты, ол өз үтігін Нью Йоркте Маусымның 6, 1882 жылы патенттеді (патен нөмірі 259,054). Оның үтігі 15 поунд болып ұзақ қызатын. ";
+          text2.style.fontFamily="Garamond";
+          const button=document.getElementById("button");
+          function sortTable() {
+  let table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("table");
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[0];
+      y = rows[i + 1].getElementsByTagName("td")[0];
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortTable() {
+  let table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("table");
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("tr");
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[1];
+      y = rows[i + 1].getElementsByTagName("td")[1];
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      
+      switching = true;
+    }
+  }
+  alert(`самый мощный:${rows[i + 1], rows[i].innerText}`);
+}
+function animaton() {
+  let elem=document.getElementById("ani");
+    let positon=0;
+    let id=setInterval(frame,10 )
+    function frame() 
+    {
+      if(positon==1300){
+    return positon=0;
+      }else{
+        positon++;
+         elem.style.left=positon+"px";
+      }
+    }
+  }
+  function fre(){
+   if (confirm('другой сайт')){
+  window.location.href="http://www.msiit.ru/x/eumkit/website__7_dom__document_object_model.html" 
+} 
+  }
+
+  </script>
+      <button onclick="animaton()">animation</button>
+      <button onclick="fre()">сайт</button>
+      <div id="ani"></div>  
+    </div>  
+    
+      <script src="жава.js"></script>
+
+    </body>
+</html>
